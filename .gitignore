@@ -3,3 +3,5 @@
 dist
 node_modules
 .parcel-cache
+.eslintcache
+package-lock.json
