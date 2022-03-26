@@ -9,9 +9,11 @@
   "scripts": {
     "start": "parcel serve",
     "build": "parcel build",
-    "lint": "eslint --ext .js,.jsx src --ignore-path .gitignore",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src --quiet --ignore-path .gitignore",
     "patch": "patch-package",
     "test": "echo \"no implementation yet\"",
+    "ts": "ttsc -w",
+    "tsc": "ttsc --noEmit",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -23,8 +25,14 @@
     "@commitlint/config-conventional": "^16.2.1",
     "@parcel/transformer-svg-react": "^2.3.2",
     "@size-limit/preset-app": "^7.0.8",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.2.0",
@@ -37,7 +45,11 @@
     "prettier": "^2.6.0",
     "size-limit": "^7.0.8",
     "solidarity": "^3.0.4",
-    "source-map-explorer": "^2.5.2"
+    "source-map-explorer": "^2.5.2",
+    "ttypescript": "^1.5.13",
+    "typescript": "^4.6.3",
+    "typescript-transform-paths": "^3.3.1",
+    "zx": "^6.0.7"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
