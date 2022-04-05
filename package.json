@@ -43,6 +43,7 @@
     "parcel": "^2.4.0",
     "patch-package": "^6.4.7",
     "prettier": "^2.6.1",
+    "semantic-release": "^19.0.2",
     "size-limit": "^7.0.8",
     "solidarity": "^3.0.4",
     "source-map-explorer": "^2.5.2",
